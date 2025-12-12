@@ -24,7 +24,7 @@ const server = createServer(app)
 const io = new Server(server)
 
 // ! Middleware
-app.use(express.static(path.join(DIRNAME, variablesEntorno.public_directory)))
+app.use(express.static(path.join(DIRNAME, 'public')))
 
 
 io.on('connection', (socket) => {
